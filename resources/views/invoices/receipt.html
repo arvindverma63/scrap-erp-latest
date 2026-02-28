@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #333333;line-height: 1.4;
+    }
+    strong{color: #000;font-size: 17px;}
+
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .invoice-header h2 {
+      margin: 0;
+      color: #14727b;
+    }
+
+    .invoice-header .receipt-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #14727b;
+    }
+     .left, .right{
+        width:49%;display: inline-block;vertical-align: top;
+     }
+    .right{text-align: right;}
+    .right td{border:0;    padding: 0 !important;color: #333333;}
+    .right table{
+            width: 40%;
+        border: 0;
+        margin-top: 5px;
+        margin-left: auto;
+        }
+    .company-details div,
+    .receipt-details div {
+      line-height: 1.5;
+    }
+
+    .logo img {
+      width: 140px;
+      object-fit: contain;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #14727b;color: #000;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background: #14727b45;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .total-row {
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 12px;
+      color: #555;
+    font-weight: bold;
+    }
+
+    h3 {
+      color: #14727b;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Invoice Header -->
+    <div class="invoice-header">
+        <div class="logo">
+         <img src="logo.png" alt="Company Logo">
+        </div>
+      <div>
+        <h2>CM Recycling Company Ltd</h2>
+        <p>383 Spanish Town Road, Kingston 11<br>
+          Ph: (876) 758-3787 | 931-6881<br>
+          Email: cmrecyclingltd@gmail.com
+        </p>
+      </div>
+      
+    </div>
+
+    <p style="margin-bottom:0"><strong style="color:#14727b;">Purchase Receipt #:</strong><strong style="font-size: 20px;"> INV1001</strong></p>
+    <p style="margin-top:0">  <strong style="color:#14727b;">Date:</strong> September 22, 2025, 10:04:43AM</p>
+
+    <!-- Seller and Transaction Details at Top -->
+    <div class="receipt-details">
+      <div class="left">
+        <strong>Seller Details</strong><br>
+        Oniel Garnett Henry<br>
+        57 6th Street Kingston 13<br>
+      </div>
+        <div class="right">
+            <strong>Transaction Details</strong>
+            <table style="border: 0; margin-top:5px;" border="0">
+                <tbody><tr>
+                <td style="text-align:left;padding:4px;text-align: right;">Transaction Number:</td>
+                <td style="text-align:right; padding:4px;"><strong style="color:#222222">2026359</strong></td>
+                </tr>
+                <tr>
+                <td style="text-align:left;padding:4px;text-align: right;">Transaction Type:</td>
+                <td style="text-align:right; padding:4px;"><strong style="color:#222222">Cash</strong></td>
+                </tr>
+                <tr>
+                <td style="text-align:left;padding:4px;text-align: right;">Cashier:</td>
+                <td style="text-align:right; padding:4px;"><strong style="color:#222222">Latoya</strong></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Products Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Sr.No.</th>
+          <th>Products</th>
+          <th>Qty</th>
+          <th>Unit Price</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Test Product 1</td>
+          <td>2</td>
+          <td>100.00</td>
+          <td>200.00</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Test Product 2</td>
+          <td>1</td>
+          <td>300.00</td>
+          <td>300.00</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="text-right total-row">Total Settlement</td>
+          <td> $180,041.74</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="text-right total-row">Less Scale Fee</td>
+          <td>$2,845.60</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="text-right total-row">Total Paid Out</td>
+          <td>$126,547.14</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="width:100%;margin-top:50px;text-align: right;">
+      <div>
+        <strong>Authorized Signature</strong>
+        <div style="border-top:1px solid #3333331f; margin-top:10px; width:100%;"></div>
+      </div>
+    </div>
+    <div class="footer">
+      THANK YOU FOR YOUR BUSINESS!<br>
+      Please come again
+    </div>
+  </div>
+</body>
+
+</html>

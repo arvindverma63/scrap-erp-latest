@@ -1,0 +1,14 @@
+.topbar .topbar-custom:last-child ul li:last-child .nav-icon p {
+    font-size: 10px;
+    margin: 0 !important;
+    line-height: 1;
+}
+
+.topbar .topbar-custom .thumb-md {
+    width: 28px;
+    height: 28px;
+}
+
+.topbar .topbar-custom .topbar-item {
+    margin-right: 10px;
+}

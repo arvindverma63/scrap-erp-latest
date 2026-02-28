@@ -1,0 +1,11 @@
+#buyer-container {
+    margin-top: 20px;
+    margin-left: 6%;
+    width: 100%;
+}
+
+@media(max-width: 720px){
+    #buyer-container{
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,2 @@
+customer_type,name,email,country_code,phone,street_address,city,postal_code,country,company_name,company_email,company_phone_number,tax,bank_name,bank_branch,account_number,is_loyal
+individual,John Doe,john@example.com,1,9876543210,123 Main St,New York,10001,United States,Acme Corp,info@acmecorp.com,1234567890,GST12345,ABC Bank,Main Branch,1234567890,Yes
